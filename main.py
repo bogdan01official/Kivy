@@ -21,9 +21,9 @@ class MyApp(App):
 
     def open(self, *args):
         name = self.input_data.text
-        try:  # пробуем открыть файл
+        try:
             f = open(name, 'r')
-            t = f.read()  # открываем файл для чтения
+            t = f.read()
             if t != "":
                 self.label.text = str(t)
             else:
